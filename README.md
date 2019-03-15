@@ -1,9 +1,9 @@
-**KUALITEE-SDK**
+# **KUALITEE-SDK**
 
 A stress-free Project Management is a tester’s dream. Let Kualitee help you manage your testing activities without getting tangled in different documents. Create your own testing project and sync it with your testing requirements. Not just that, you can define your testing team by adding users who can also view the results and make status updates after bug fixes.
 	
 
-**Getting Started**
+## **Getting Started**
 
 **Requirements**
 
