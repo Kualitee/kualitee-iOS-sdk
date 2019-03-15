@@ -15,7 +15,7 @@ A stress-free Project Management is a tester’s dream. Let Kualitee help you ma
 **Prerequisites**
 
 You need to install Kualitee Application from AppStore. 
-Here is the link to download: [https://itunes.apple.com/in/app/kualitee/id404166406](Download Kualitee App)
+Here is the link to download: [https://itunes.apple.com/in/app/kualitee/id404166406](Kualitee-App)
 
 **Installing**
 
