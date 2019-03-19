@@ -33,6 +33,13 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 
 **Integration**
 
+**Note**: Open info.plist file of your target and copy/paste the following code snippet to ensure your Application can open Kualitee Application otherwise Kualitee Application will not be redirected to.
+
+	<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>x-kualitee</string>
+		</array>
+
 **Swift**
 
 For integration with Swift, type this code snippet in AppDelegate.swift file of your project.
