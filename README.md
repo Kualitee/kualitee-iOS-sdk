@@ -64,12 +64,15 @@ For integration with Swift, type this code snippet in AppDelegate.swift file of 
 **Objective-C**
 
 For integration with Objective-C: 
-Goto "Build Settings" of Target, Navigate to "Packaging" and Set "Defines Module" -> "Yes".
 
-	In AppDelegate.h file:
-	@class KualiteeSDK;
+1. Goto "Build Settings" of Target, Navigate to "Packaging" and Set "Defines Module" -> "Yes".
+1. Goto "Build Settings" of Target, Navigate to "Build Options" and Set "Always Embed Swift Standard Libraries" -> "Yes", otherwise project/target will not allow standard swift libraries to compile.
 
-	In AppDelegate.m file:
+In AppDelegate.h file:
+@class KualiteeSDK;
+
+In AppDelegate.m file:
+
 	#import <KualiteeSDK/KualiteeSDK-Swift.h>
 	
 	@implementation AppDelegate
