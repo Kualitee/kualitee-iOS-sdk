@@ -15,13 +15,13 @@ A stress-free Project Management is a tester’s dream. Let Kualitee help you ma
 **Prerequisites**
 
 You need to install Kualitee Application from AppStore. 
-Here is the link to download: [https://itunes.apple.com/in/app/kualitee/id404166406](Kualitee-App)
+If you don't have Kualitee App installed, download from [here](https://itunes.apple.com/in/app/kualitee/id404166406)
 
 **Installing**
 
 **CocoaPods**
 
-CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
+CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate KualiteeSDK into your Xcode project using CocoaPods, specify it in your Podfile:
 
 	platform :ios, '10.0'
 	target '{Your_target}' do
@@ -30,8 +30,20 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 		pod 'KualiteeSDK', '~> 1.0'
 	end
 
+**Manually**
+
+Download our latest SDK from [here](https://github.com/Kualitee/kualitee-iOS-sdk/blob/master/KualiteeSDK.zip).
+Unzip the downloaded file and drag/drop the extracted framework file to your project.
+Select your *Target*, goto *General* and naviate to *Embedded Libraries*. click on *+* icon and select *KualiteeSDK.framework* file.
 
 **Integration**
+
+**Note**: Open info.plist file of your target and copy/paste the following code snippet to ensure your Application can open Kualitee Application otherwise Kualitee Application will not be redirected to.
+
+	<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>x-kualitee</string>
+		</array>
 
 **Swift**
 
@@ -64,12 +76,15 @@ For integration with Swift, type this code snippet in AppDelegate.swift file of 
 **Objective-C**
 
 For integration with Objective-C: 
-Goto "Build Settings" of Target, Navigate to "Packaging" and Set "Defines Module" -> "Yes".
 
-	In AppDelegate.h file:
-	@class KualiteeSDK;
+1. Goto "*Build Settings*" of Target, Navigate to "*Packaging*" and Set "*Defines Module*" -> "*Yes*".
+1. Goto "*Build Settings*" of Target, Navigate to "*Build Options*" and Set "*Always Embed Swift Standard Libraries*" -> "*Yes*", otherwise project/target will not allow standard swift libraries to compile.
 
-	In AppDelegate.m file:
+In AppDelegate.h file:
+@class KualiteeSDK;
+
+In AppDelegate.m file:
+
 	#import <KualiteeSDK/KualiteeSDK-Swift.h>
 	
 	@implementation AppDelegate
