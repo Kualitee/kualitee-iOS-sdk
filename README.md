@@ -7,9 +7,9 @@ A stress-free Project Management is a tester’s dream. Let Kualitee help you ma
 
 **Requirements**
 
-1. iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
-1. Xcode 10.1+
-1. Swift 4.2+
+1. iOS 10.0+
+1. Xcode 10.2+
+1. Swift 5.0+
 
 
 **Prerequisites**
