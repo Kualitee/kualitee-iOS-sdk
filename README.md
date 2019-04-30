@@ -27,7 +27,7 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 	target '{Your_target}' do
 		use_frameworks!
 		
-		pod 'KualiteeSDK', '~> 0.1.10'
+		pod 'KualiteeSDK', '~> 0.1.11'
 	end
 
 **Manually**
